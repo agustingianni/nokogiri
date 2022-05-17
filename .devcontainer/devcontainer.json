@@ -1,0 +1,9 @@
+{
+	"name": "ghsl/nokogiri",
+	"image": "mcr.microsoft.com/vscode/devcontainers/ruby",
+	"settings": {},
+	"extensions": [
+		"ms-vscode.cpptools"
+	],
+	"postCreateCommand": ".devcontainer/post-create-command.sh"
+}
