@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Nokogiri PoC",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/usr/local/bin/ruby",
+            "args": [
+                "-I", "lib:ext",
+                "-r", "nokogiri",
+                "-e", "Nokogiri::XML::SAX::Parser.new.parse 0xcafecafe >> 1"
+            ],
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+        }
+    ]
+}
