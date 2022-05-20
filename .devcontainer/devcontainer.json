@@ -1,9 +1,12 @@
 {
 	"name": "ghsl/nokogiri",
 	"image": "mcr.microsoft.com/vscode/devcontainers/ruby",
-	"settings": {},
+	"settings": {
+		"liveshare.allowGuestDebugControl": true
+	},
 	"extensions": [
-		"ms-vscode.cpptools"
+		"ms-vscode.cpptools",
+		"ms-vsliveshare.vsliveshare"
 	],
 	"postCreateCommand": ".devcontainer/post-create-command.sh"
 }
